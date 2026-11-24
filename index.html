@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion E-commerce Product Page</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Montserrat';
+        }
+
+        #flex-container {
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .left-content {
+            display: flex;
+            flex: 50%;
+            gap: 2px;
+        } 
+        
+        .right-content {
+            display: flex;
+            flex-direction: column;
+            flex: 50%;
+            padding: 30px;
+            align-items: end;
+        }
+
+        #main-image {
+            flex-grow: 2;
+            background-image: url(images/image1.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #secondary-image-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        #secondary-image-container div {
+            background-position: center;
+            background-size: cover;
+            flex-grow: 1;
+        }
+
+        #secondary-image-container div:nth-child(1) {
+            background-image: url(images/image2.png);
+        }
+
+        #secondary-image-container div:nth-child(2) {
+            background-image: url(images/image3.png);
+        }
+
+        #secondary-image-container div:nth-child(3) {
+            background-image: url(images/image4.png);
+        }
+
+        #secondary-image-container div:nth-child(4) {
+            background-image: url(images/image5.png);
+        }
+
+        .begin-session {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .begin-session p {
+            font-size: 14px;
+        }
+
+        .icon-card {
+            height: 25px;
+            width: 25px;
+            background-image: url(images/Card.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .content-session {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            flex: 1;
+        }
+
+        .content-session .content-heading {
+            font-size: 32px;
+            font-weight: 100;
+            margin: 0px;
+        }
+
+        .content-session .price {
+            font-size: 22px;
+            margin: 0px;
+        }
+
+        .content-session .product-code {
+            font-size: 14px;
+            color: #828282;
+        }
+
+        .content-session .description {
+            font-size: 14px;
+            line-height: 18px;
+            text-align: end;
+        }
+
+        .size-list {
+            display: flex;
+        }
+
+        .size-list div {
+            font-size: 14px;
+            padding: 12px;
+            margin: 3px;
+            width: 42px;
+            height: 42px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .size-guide {
+            font-size: 12px;
+            text-decoration: underline;
+        }
+
+        .add-to-bag {
+            font-size: 18px;
+            padding: 22px 115px;
+            background-color: black;
+            color: white;
+        }
+
+        .note {
+            font-size: 12px;
+            line-height: 15px;
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <div id="flex-container">
+        <div class="left-content">
+            <div id="main-image">
+
+            </div>
+            <div id="secondary-image-container">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="begin-session">
+                <p>BEGIN SESSION</p>
+                <div class="icon-card"></div>
+            </div>
+            <div class="content-session">
+                <p class="content-heading">TRACK BUTTON</p>
+                <p class="price">$ 199,00</p>
+                <p class="product-code">IVORY WHITE | 7272/337</p>
+                <p class="description">
+                    We work with our suppliers, workers, unions and <br>
+                    international bodies to develop a supply chain where human <br>
+                    rights are promoted and respected, contributing to the <br>
+                    United Nations Sustainable Development Goals.
+                </p>
+                <div class="size-list">
+                    <div>EP</div>
+                    <div>P</div>
+                    <div>M</div>
+                    <div>G</div>
+                    <div>EG</div>
+                </div>
+                <P class="size-guide">SIZE GUIDE</P>
+                <button class="add-to-bag">ADD TO BAG</button>
+                <P class="note">ADD TO FAVORITES <br>
+                    CALCULATE SHIPPING AND DELIVERY
+                </P>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
